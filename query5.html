@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Query5</title>
+        <script src="Jquery.js"></script>
+    </head>
+    <body>       
+       <p>Java</p> 
+       <p>Python</p>
+       <p>C++</p>
+
+       <script>
+        $(document).ready(function(){
+            $('p').click(function(){
+                $('p:eq(2)').css('background-color','red');
+            });
+           
+        });
+        </script>
+        
+    </body>
+</html>
