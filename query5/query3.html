@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+       <title>Query3</title>
+       <script src="Jquery.js"></script>
+       <link rel="stylesheet" href="style.css">
+
+        
+    </head>
+    <body>
+        <div class="box">
+            <h1>Trial</h1>
+            <p>Writing is a form of expression, and neat handwriting is important when
+                writing anything that will be read by someone else. We are often judged by the
+                quality of our handwriting, and when our penmanship is poor we appear to be
+                lazy or incompetent.</p>
+        </div>
+        <div class="box2">
+                <h1>Another div</h1>
+        </div>
+        <button id="clonebutton">Clone</button>
+        <script>
+            $(document).ready(function(){
+                $('#clonebutton').click(function(){
+                    $('.box h1').clone().prependTo('.box2');
+                    $('.box p').clone().appendTo('.box2');
+                    $('.box2 h1:eq(1)').remove();
+                });
+            });
+        </script>
+               
+    </body>
+</html>
