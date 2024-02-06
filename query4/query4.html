@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+       <title>Query4</title>
+       <script src="Jquery.js"></script>
+       <link rel="stylesheet" href="style1.css">
+
+        
+    </head>
+    <body>
+        <div class="box">
+            <h1>Trial</h1>
+            <h2>Hello</h2>
+            <h3>Bye</h3>
+            </div>
+                   
+        <button id="replaceWith">replace</button>
+        <script>
+            $(document).ready(function(){
+                $('#replaceWith').click(function(){
+                    $('h1').replaceWith('<h2>Hello</h2>');
+                });  
+                
+            });
+        </script>
+               
+    </body>
+</html>

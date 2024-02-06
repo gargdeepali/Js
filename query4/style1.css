@@ -1,0 +1,17 @@
+.box{
+    width: 400px;
+    height: 160px;
+    margin: 10px;
+    border-style: dotted;
+    border-color: black;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
