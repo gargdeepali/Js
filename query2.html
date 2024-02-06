@@ -1,0 +1,27 @@
+//Write a jQuery Code to get a single element from a selection.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Query2</title>
+        <script src="Jquery.js"></script>
+        
+    </head>
+    <body>  
+        <ul>
+            <li>Html Tutorial</li>
+            <li>Mongodb Tutorial</li>
+            <li>Python Tutorial</li>
+        </ul>    
+        <script>
+         $(document).ready(function(){
+            $('ul').html(function(){
+               var a= $('li:eq(2)').text();
+               console.log(a);
+            });
+
+         });
+        </script>
+    </body>
+</html>

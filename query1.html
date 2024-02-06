@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Query 1 </title>
+        <link rel="stylesheet" href="">
+        <script src="Jquery.js"></script>
+    </head>
+    <body>
+     <h1>abc</h1> 
+     <div>
+        <h1>div-1</h1>
+        <h1>div-2</h1>
+     </div> 
+     <h1>xyz</h1>  
+     
+     <script>
+        $(document).ready(function(){
+            $('body').css('background-color','red');
+
+           $('div').html(function(){
+            var a = $(this).find('h1').text();
+                console.log(a);
+           });  
+           $('div').click(function(){
+            $('div').css('background-color','yellow');
+           });        
+        });
+     </script>
+        
+    </body>
+</html>
+
